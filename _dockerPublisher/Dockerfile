@@ -29,7 +29,7 @@ RUN dnf clean all
 
 RUN bash -l -c "gem install bundler awestruct"
 
-RUN useradd -m jenkins -u 1001 --shell /bin/bash
+RUN useradd -m jenkins -u 1000 --shell /bin/bash
 RUN usermod -a -G wheel jenkins
 
 #change permissions in sudoers
